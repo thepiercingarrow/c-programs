@@ -29,13 +29,14 @@ int main() {
     {"\0", 0, 0}
   };
   int NP, i, NG, index, given;
-  fscanf(fin, "%d\n", &NP);
+  getw(fin, &NP);
   char name[15];
   for (i = 0; i < NP; i++)
     fscanf(fin, "%s\n", friends[i].name);
   for (i = 0; i < NP; i++) {
     fscanf(fin, "%s\n", name);
-    fscanf(fin, "%d %d\n", &given, &NG);
+    getw(fin, &given);
+    getw(fin, &NG);
     given = given / (NG ? NG : 1);
     friends[indexName(name, friends)].given = given * NG;
     for (; NG > 0; NG--) {
