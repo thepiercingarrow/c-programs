@@ -16,7 +16,7 @@ int main() {
   int N, i, j;
   char before[10][11], after[10][11];
 
-  fscanf(fin, "%d\n", &N);
+  getw(fin, &N);
   for (i = 0; i < N; ++i)
     fscanf(fin, "%s\n", before[i]);
   for (i = 0; i < N; ++i)
