@@ -21,9 +21,11 @@ int main() {
   FILE *fout = fopen("milk2.out", "w");
   int i, N, start, end, max_cont = 0, max_idle = 0;
   struct farmer farmers[5000];
-  fscanf(fin, "%d\n", &N);
-  for (i = 0; i < N; ++i)
-    fscanf(fin, "%d %d\n", &farmers[i].start, &farmers[i].end);
+  getw(fin, &N);
+  for (i = 0; i < N; ++i) {
+    getw(fin, &farmers[i].start);
+    getw(fin, &farmers[i].end);
+  }
   qsort(farmers, N, sizeof(struct farmer), compar);
   start = farmers[0].start;
   end = farmers[0].end;
