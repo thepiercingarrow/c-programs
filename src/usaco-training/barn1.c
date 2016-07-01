@@ -1,4 +1,4 @@
-`/*
+/*
 ID: thepier1
 LANG: C
 TASK: barn1
