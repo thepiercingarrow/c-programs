@@ -50,7 +50,6 @@ int main() {
   qsort(spaces, j + 1, sizeof(int), (int (*)(const void *, const void *))compar); // sort in descending order
   int len = S - fc + 1;
   i = 0;
-  printf("S:%d fc:%d len:%d\n",S,fc,len);
   while (len != C && --M) // while still empty spaces and more boards
     len -= spaces[i++];
   fprintf(fout, "%d\n", len);
