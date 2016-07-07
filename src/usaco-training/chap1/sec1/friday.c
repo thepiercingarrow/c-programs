@@ -13,7 +13,7 @@ int main() {
   const int ldays[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
   const int *days;
   int N, day = 2, date, month, year, thirteenths[7] = {0, 0, 0, 0, 0, 0, 0};
-  getw(fin, &N);
+  fscanf(fin, "%d\n", &N);
   for (year = 0; year < N; year++) {
     if (ISLEAPYEAR(year + 1900))
       days = ldays;
